@@ -37,6 +37,7 @@ alias sudo='sudo '
 alias grep='grep --color' 
 
 # History
+HISTCONTROL=ignoreboth #Ignores duplicate and leading whitespace commands
 alias h="history"
 HISTSIZE=100000
 HISTFILESIZE=200000
