@@ -1,6 +1,4 @@
-### PATHS
-# added by Anaconda3 4.3.0 installer
-export PATH="/Users/msaharia/anaconda/bin:$PATH"
+### PATHS~
 
 ### Aliases
 
@@ -48,12 +46,33 @@ shopt -s histappend
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Git
-# You must install Git first
-alias gs='git status'
+alias gst='git status'
 alias ga='git add .'
-alias gc='git commit -m' # requires you to type a commit message
-alias gp='git push'
+alias gco='git commit -m' # requires you to type a commit message
+alias gpush='git push'
+alias gpull='git pull'
 alias grm='git rm $(git ls-files --deleted)'
+alias gch='git checkout'
+alias gl='git log'
+alias gdiff='git diff'
+
+# Automatically enter a dir and list
+function cs () {
+    cd $1
+    ls htr --color -h --group-directories-first
+}
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
 
 ### Prompt Colors
 # Modified version of @gf3’s Sexy Bash Prompt
