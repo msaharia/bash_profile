@@ -29,6 +29,13 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+#Full location of a link
+alias rl="readlink -f"
+
+#netCDF shortcuts
+alias ncd="ncdump -h"
+alias ncv="ncdump -v"
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
