@@ -59,7 +59,7 @@ alias gdiff='git diff'
 # Automatically enter a dir and list
 function cs () {
     cd $1
-    ls htr --color -h --group-directories-first
+    ls -htr --color -h --group-directories-first
 }
 
 # enable color support of ls and also add handy aliases
