@@ -21,6 +21,7 @@ alias ls="command ls ${colorflag}"
 alias l="ls -lF ${colorflag}" # all files, in long format
 alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
 alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
+alias ds='du -sh' #size of directory
 
 # Quicker navigation
 alias ..="cd .."
