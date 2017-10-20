@@ -62,7 +62,9 @@ alias gpull='git pull'
 alias grm='git rm $(git ls-files --deleted)'
 alias gch='git checkout'
 alias gl='git log'
-alias gdiff='git diff'
+alias gd='git diff'
+alias gm='git merge'
+alias gf='git fetch'
 
 # Automatically enter a dir and list
 function cs () {
