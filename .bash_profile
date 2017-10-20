@@ -15,6 +15,11 @@ alias cheyenne='ssh -X manab@cheyenne.ucar.edu'
 alias flash252='ssh -X -l manab 10.197.10.252'
 alias flash249='ssh -X -l manab 10.197.10.249'
 
+# SERVER SHORTCUTS
+alias hwork='cd /d3/msaharia' #hydro-c1
+alias cwork='cd /glade/p/work/manab' #cheyenne
+alias chome='cd /glade/u/home/manab' #cheyenne
+
 # Color LS
 colorflag="-G"
 alias ls="command ls ${colorflag}"
